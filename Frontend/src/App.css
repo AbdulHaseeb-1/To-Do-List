@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+    height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #353535;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+::-webkit-scrollbar-corner{
+    background: #353535;
+}
+::-webkit-datetime-edit { padding: 1em; }
+
+::-webkit-calendar-picker-indicator { filter: invert(100%); }
+
+input[type="date"] {
+	background-color: black;
+	color:  rgb(59, 189, 59);
+	border: 1px solid rgb(59, 189, 59);
+	padding: 2px;
+	border-radius: 5px;
+}
