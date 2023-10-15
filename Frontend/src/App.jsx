@@ -11,6 +11,7 @@ export default function App() {
         <Route path='/Entry' element={<Entry/>} />
         <Route path='/' element={<TaskPage/>} />
         <Route path='/calander' element={<Calander/>} />
+        <Route path='*' element={<TaskPage/>} />
         
 
       </Routes>

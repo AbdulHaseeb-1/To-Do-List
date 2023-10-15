@@ -2,13 +2,15 @@ import { createContext,useContext } from "react";
 
 const AuthContext = createContext();
 
-function AuthProvider({children}) {
-    
+export function AuthProvider({children}) {
+    function HandleSubmit(userdata) {
 
+        console.log(userdata);
+    }
 
-    <AuthContext.Provider value={HandleSubmit}>
-        {{children}}
+    return <AuthContext.Provider value={HandleSubmit}>
+        {children}
     </AuthContext.Provider>
 }
 
-const Auth = ()=>useContext(AuthContext);
+export const Auth = ()=>useContext(AuthContext);
